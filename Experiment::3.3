@@ -1,0 +1,37 @@
+3.3) Implement a Python script that prompts the user of a
+     number, and prints that number in words. Example:
+     Input:453 Output:Four Five Three.
+     Input:1000 Output:One Zero Zero Zero.
+
+num = int(input('Enter Your Number:'))
+res = ''
+while num:
+    rem = num%10
+    res = res + str(rem)
+    num //= 10
+res = res[::-1]
+for i in range(0,len(res)):
+    if res[i] == '1':
+        print('One',end=" ")
+    elif res[i] == '2':
+        print('Two',end=" ")
+    elif res[i] == '3':
+        print('Three',end=" ")
+    elif res[i] == '4':
+        print('Four',end=" ")
+    elif res[i] == '5':
+        print('Five',end=" ")
+    elif res[i] == '6':
+        print('Six',end=" ")
+    elif res[i] == '7':
+        print('Seven',end=" ")
+    elif res[i] == '8':
+        print('Eight',end=" ")
+    elif res[i] == '9':
+        print('Nine',end=" ")
+    else    print('Zero',end=" 
+Output:
+Enter Your Number:12345
+One Two Three Four Five
+Enter Your Number:1000
+One Zero Zero Zero
