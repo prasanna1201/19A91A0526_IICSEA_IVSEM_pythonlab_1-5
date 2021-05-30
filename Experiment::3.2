@@ -1,0 +1,87 @@
+#Implement a python script using for loop that loops over a sequence
+#program using for loop
+fruits = ["apple", "grapes", "mango"]
+for x in fruits:
+  print(x) 
+#Output::
+apple
+grapes
+mango
+
+#program looping through string 
+for x in "pineapple":
+  print(x)
+#Output::
+p
+i
+n
+e
+a
+p
+p
+l
+e
+
+#program using for loop with break statement
+numbers = ["one", "two", "three"]
+for x in numbers:
+  print(x)
+  if x == "two":
+    break
+#Output::
+one
+two
+
+#program using for loop with continue
+colours = ["blue", "pink", "black"]
+for x in colours:
+  if x == "pink":
+    continue
+  print(x)
+#Output::
+blue
+black
+
+#program using range() function
+for x in range(8):
+  print(x)
+#Output::
+0
+1
+2
+3
+4
+5
+5
+7
+
+#program having else in for loop
+for x in range(6):
+  print(x)
+else:
+  print("Finally finished!")
+#Output::
+0
+1
+2
+3
+4
+5
+Finally finished!
+
+#program having nested for loops
+adj = ["fresh", "big", "tasty"]
+fruits = ["apple", "banana", "cherry"]
+for x in adj:
+  for y in fruits:
+    print(x, y)
+#Output::
+fresh apple
+fresh banana
+fresh cherry
+big apple
+big banana
+big cherry
+tasty apple
+tasty banana
+tasty cherry
