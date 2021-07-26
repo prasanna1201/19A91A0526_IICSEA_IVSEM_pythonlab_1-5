@@ -1,0 +1,12 @@
+try:
+    a=int(input("enter a value"))
+    b=int(input("enter b value"))
+    a/b
+except:
+    print("number  should be greater than 0")
+else:
+    print(a/b)
+Output:
+enter a value6
+enter b value0
+number  should be greater than 0
